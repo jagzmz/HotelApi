@@ -46,7 +46,6 @@ module.exports = function(Hotel) {
         }
 
     }
-
     Hotel.remoteMethod('findFeatureById',{
         accepts: [
             {arg: 'id', type: 'string',required:true},
