@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDb": {
+    "host": "mj123:abcdefg@hotelapi-xn7c8.mongodb.net",
+    "database": "test",
+    "name": "mongoDb",
+    "protocol": "mongodb+srv",
+    "connector": "mongodb"
+  }
+}

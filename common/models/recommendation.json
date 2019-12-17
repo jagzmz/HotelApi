@@ -1,0 +1,23 @@
+{
+  "name": "Recommendation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hotel": {
+      "type": "belongsTo",
+      "model": "Hotel",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

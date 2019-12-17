@@ -1,0 +1,36 @@
+{
+  "name": "Hotel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "rating": {
+      "type": "number"
+    },
+
+    "features": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bookings": {
+      "type": "hasMany",
+      "model": "Booking",
+      "foreignKey": "hotelId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

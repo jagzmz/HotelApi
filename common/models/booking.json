@@ -1,0 +1,39 @@
+{
+  "name": "Booking",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "custId": {
+      "type": "string",
+      "required": true
+    },
+    "hotelId": {
+      "type": "string",
+      "required": true
+    },
+    "cost": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "hotel": {
+      "type": "belongsTo",
+      "model": "Hotel",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
