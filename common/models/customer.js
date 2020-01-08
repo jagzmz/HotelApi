@@ -7,12 +7,12 @@ module.exports = function(Customer) {
     const ObjectId = require('mongodb').ObjectId;
   
     
-    Customer.testRecommendation=async (cb)=>{
+    Customer.testRecommendation=async (cusId)=>{
 
         var hotelPipeLine=[
 
             {
-                $match: { custId: ObjectId("5e143810ad4cda1330e76b7d") } 
+                $match: { custId: ObjectId(cusId) } 
             },
             // {
             //     $group: {_id: null, uniqueValues: {$addToSet: "$hotelId"}}
@@ -99,9 +99,10 @@ module.exports = function(Customer) {
 
     Customer.remoteMethod('testRecommendation',{
     accepts: [
+        {arg: 'cusId', type: 'string',required:true},
     ],
     returns: {arg:'data',type: 'object',root:true},
-    http: {path: '/recommendation', verb: 'get'}
+    http: {path: '/:cusId/recommendation', verb: 'get'}
     })
     
       
