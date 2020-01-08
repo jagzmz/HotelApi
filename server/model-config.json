@@ -42,7 +42,7 @@
   },
   "Booking": {
     "dataSource": "mongoDb",
-    "public": false
+    "public": true
   },
   "Hotel": {
     "dataSource": "mongoDb",

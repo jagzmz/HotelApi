@@ -4,10 +4,14 @@
     "connector": "memory"
   },
   "mongoDb": {
-    "host": "mj123:abcdefg@hotelapi-xn7c8.mongodb.net",
-    "database": "test",
+    "host": "localhost",
+    "port": 27017,
+    "url":  "",
+    "database": "admin",
+    "password": "password",
     "name": "mongoDb",
-    "protocol": "mongodb+srv",
+    "user": "admin",
+    "authSource" : "admin",
     "connector": "mongodb"
   }
 }

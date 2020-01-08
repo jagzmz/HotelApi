@@ -6,21 +6,12 @@
     "validateUpsert": true
   },
   "properties": {
-    "id": {
-      "type": "string"
-    },
     "name": {
       "type": "string",
       "required": true
     },
     "rating": {
       "type": "number"
-    },
-
-    "features": {
-      "type": [
-        "string"
-      ]
     }
   },
   "validations": [],
@@ -29,6 +20,15 @@
       "type": "hasMany",
       "model": "Booking",
       "foreignKey": "hotelId"
+    },
+    "features": {
+      "type": "referencesMany",
+      "model": "Feature",
+      "foreignKey": "featureIds",
+      "options": {
+        "validate": false,
+        "forceId": false
+      }
     }
   },
   "acls": [],

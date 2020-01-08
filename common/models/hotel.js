@@ -46,14 +46,14 @@ module.exports = function(Hotel) {
         }
 
     }
-    Hotel.remoteMethod('findFeatureById',{
-        accepts: [
-            {arg: 'id', type: 'string',required:true},
-            {arg: 'fid', type: 'string',required:true}
-        ],
-        returns: {arg:'data',type: 'object',root:true},
-        http: {path: '/:id/addFeature/:fid', verb: 'put'}
-    })
+    // Hotel.remoteMethod('findFeatureById',{
+    //     accepts: [
+    //         {arg: 'id', type: 'string',required:true},
+    //         {arg: 'fid', type: 'string',required:true}
+    //     ],
+    //     returns: {arg:'data',type: 'object',root:true},
+    //     http: {path: '/:id/addFeature/:fid', verb: 'put'}
+    // })
 
 
 };

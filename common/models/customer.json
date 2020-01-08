@@ -3,12 +3,10 @@
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
-    "validateUpsert": true
+    "validateUpsert": true,
+    "strictObjectIDCoercion": true
   },
   "properties": {
-    "id": {
-      "type": "string"
-    },
     "name": {
       "type": "string",
       "required": true
@@ -16,11 +14,6 @@
     "email": {
       "type": "string",
       "required": true
-    },
-    "favourites": {
-      "type": [
-        "string"
-      ]
     },
     "location": {
       "type": "string",
