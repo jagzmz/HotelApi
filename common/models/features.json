@@ -6,7 +6,6 @@
     "validateUpsert": false
   },
   "properties": {
-    
     "name": {
       "type": "string",
       "required": "string"

@@ -1,17 +1,35 @@
 {
   "db": {
     "name": "db",
-    "connector": "memory"
+    "connector": "memory",
+    "file":"db.json"
   },
   "mongoDb": {
     "host": "localhost",
     "port": 27017,
-    "url":  "",
+    "url": "",
     "database": "admin",
     "password": "password",
     "name": "mongoDb",
     "user": "admin",
-    "authSource" : "admin",
+    "authSource": "admin",
     "connector": "mongodb"
+    
+  },
+  "mail": {
+    "name": "mail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secureConnection": true,
+        "port": 587,
+        "auth": {
+          "user": "jaganiya.mahesh@gmail.com",
+          "pass": "xocoxahsjgtirkzo"
+        }
+      }
+    ]
   }
 }

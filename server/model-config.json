@@ -3,6 +3,7 @@
     "sources": [
       "loopback/common/models",
       "loopback/server/models",
+      "../node_modules/loopback-component-passport/lib/models",
       "../common/models",
       "./models"
     ],
@@ -14,26 +15,25 @@
     ]
   },
   "User": {
-    "dataSource": "db",
-    "public": false
+    "dataSource": "mongoDb",
+    "public": true
   },
-  "AccessToken": {
-    "dataSource": "db",
-    "public": false
+  "Email": {
+    "dataSource": "mail"
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongoDb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongoDb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongoDb",
     "public": false
   },
   "Customer": {
@@ -53,6 +53,22 @@
     "public": true
   },
   "Feature": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "test": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "UserCredential": {
+    "dataSource": "mongoDb",
+    "public": true
+  },
+  "UserIdentity": {
     "dataSource": "mongoDb",
     "public": true
   }

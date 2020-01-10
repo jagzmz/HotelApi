@@ -12,17 +12,25 @@
   },
   "dependencies": {
     "compression": "^1.0.3",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.4",
     "cors": "^2.5.2",
+    "dotenv": "^8.2.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.0",
     "helmet": "^3.10.0",
+    "jade": "^1.11.0",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
+    "loopback-component-passport": "^3.11.0",
     "loopback-connector-mongodb": "3.5.0",
+    "passport-google-oauth": "^2.0.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^3.17.1",
+    "eslint": "^4.18.2",
     "eslint-config-loopback": "^8.0.0",
     "nodemon": "^2.0.1"
   },
